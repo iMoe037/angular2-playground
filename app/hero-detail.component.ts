@@ -1,4 +1,6 @@
 import { Component, Input } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
+
 import { Hero } from "./hero";
 
 @Component({
