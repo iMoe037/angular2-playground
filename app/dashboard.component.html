@@ -1,0 +1,16 @@
+<div class="ui container dashboard-center">
+  <h3 class="dashboard-title">Top Heroes</h3>
+  <div>
+    <div *ngFor="let hero of heroes" (click)="gotoDetail(hero)" class="ui labeled button dashboard-button" tabindex="0">
+      <div class="ui red button">
+      <i class="heart icon"></i> Like
+    </div>
+    <a class="ui basic red left pointing label">
+      <div class="module hero">
+        <h4>{{hero.name}}</h4>
+      </div>
+    </a>
+    </div>
+  </div>
+  <hero-search></hero-search>
+</div>
